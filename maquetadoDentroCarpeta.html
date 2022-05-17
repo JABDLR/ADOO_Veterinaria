@@ -1,0 +1,71 @@
+<!--Este maquetado tiene las rutas adecuadas para utilizarse dentro de las carpetas Cliente, Auxiliar y Veterinario-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado</title>
+
+    <!--Hojas de estilo-->
+    <link rel="stylesheet" href=" ../CSS/maquetado.css">
+    <link rel="stylesheet" href=" ../CSS/Botones.css">
+
+    
+</head>
+
+<body class="grid-container">
+    <!--Heder-->
+    <header class="header">
+        <div class="Boton-desplegable" id="Boton-desplegable">
+            <img src=" ../img/menu.png" alt="Boton menu">
+        </div>
+
+        <div class="Logo">
+            <img src=" ../img/logo.png" alt="Logo Veterinaria">
+        </div>
+
+        <div class="Container-Reloj">
+            <div class="Datos-hora" id="reloj"></div>
+            <div class="Datos-fecha">
+                <span id="fec_Datos"></span>
+            </div>
+        </div>
+
+        <div class="Container-Btn-CS">
+            <button type="button" class="boton dos" onclick="location.href='/index.html'">
+                <span>cerrar sesion</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!--Menu desplegable-->
+        <div class="container-menu-desplegable active" id="menu-desplegable">
+            <ul>
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="Actividad1.html">Actividad 1</a> </li>
+                <li> <a href="Actividad2.html">Actividad 2</a> </li>
+                <li> <a href="#">Actividad 3</a> </li>
+                <li> <a href="#">Actividad 4</a> </li>
+                <li> <a href="#">Cerrar seción</a> </li>
+            </ul>
+        </div>
+
+
+                                        <!--Aqui debajo agregen su contenido-->
+    </main>
+
+    <!--pie de página-->
+    <footer class="footer">
+        <h5 class="Datos-contacto">Datos de contacto</h5>
+        <p class="Datos-contacto">Correo:   equipo3@escom.com</p>
+        <p class="Datos-contacto">Telefono: 07700900461</p>
+    </footer>
+
+    <script src=" ../JS/reloj.js"></script>
+    <script src=" ../JS/MenuDesplegable.js"></script>
+</body>
+</html>

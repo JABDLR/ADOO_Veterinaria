@@ -1,0 +1,77 @@
+/*General
+img{
+    margin: 5%;
+    width: 70%;
+    height: 80%;
+}*/
+
+/*                                  Contenido del main                          */
+.Bievenida-container{
+    height: 8%;
+    width: 100%;
+}
+
+.Botones-container{ /*Grid*/
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template:
+    "Container-Actividad1 Container-Actividad2"
+    "Container-Actividad3 Container-Actividad4";
+}
+
+.Container-Actividad1{  /*Grid*/
+    display: grid;
+    grid-template:
+    "nombre-atividad"  10%
+    "BotonActividad"    90%;
+}
+
+.Container-Actividad2{  /*Grid*/
+    display: grid;
+    grid-template:
+    "nombre-atividad"  10%
+    "BotonActividad"    90%;
+}
+
+.Container-Actividad3{  /*Grid*/
+    display: grid;
+    grid-template:
+    "nombre-atividad"  10%
+    "BotonActividad"    90%;
+}
+
+.Container-Actividad4{  /*Grid*/
+    display: grid;
+    grid-template:
+    "nombre-atividad"  10%
+    "BotonActividad"    90%;
+}
+
+/*Boton de Actividad*/
+.BotonActividad{
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 100%;
+    height: 90%;
+    background-color: orange;
+    padding-left: 4%;
+}
+
+.BotonActividad:hover{
+    background-color: #2980B9;
+}
+
+/*Parrafos*/
+.nombre-atividad{
+    color: black;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;  
+}
+
+.Bievenida{
+    margin-left: 40px;    
+    font-family: 'Anton', sans-serif;
+    color: #2E4053;
+}

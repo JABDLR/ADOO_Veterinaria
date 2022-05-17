@@ -1,0 +1,152 @@
+/*Generales*/
+*{
+    margin:0;
+    padding-left: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img{
+    margin: 5%;
+    width: 70%;
+    height: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: red;
+    min-height: 100%;
+}
+
+/*Elementos principales del Body*/
+.grid-container{    /*Grid*/
+    display: grid;
+    grid-template:
+    "header"  100px
+    "main"    auto
+    "footer"  80px;
+}
+
+.header{    /*Grid*/
+    background-color: #1A5276;
+    width: 100%;
+    height: 100%;
+
+    /*Grid*/
+    display: grid;
+    grid-template:
+    "Boton-desplegable  Logo    Container-Reloj    Container-Btn-CS" 90%/
+    10%                 60%    20%                 10%;
+}
+
+.main{
+    background-color: #E8DAEF;
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    background-color: #E8DAEF;
+    width: 100%;
+    height: 100%;
+}
+
+/*Elementos del header*/
+.Boton-desplegable{
+    margin: auto;
+    cursor: pointer;
+}
+
+.Logo{
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 95%;
+}
+
+.Container-Reloj{   /*Grid*/
+    width: 100%;
+    height: 100%;
+    margin: 1;
+    align-items: center;
+
+    /*Grid*/
+    display: grid;
+    grid-template:
+    "Datos-hora" 70%
+    "Datos-fecha" 20%;
+}
+
+.Container-Btn-CS{
+    width: 100%;
+    height: 100%;
+    margin: 1;
+}
+
+
+/*Fuente, parrafos*/
+.Datos-contacto{    /*Elemto del footer*/
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.Datos-fecha{   /*Elemto del Container-Reloj*/
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+
+.Datos-hora{    /*Elemto del Container-Reloj*/
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 100%;
+    color: white;
+}
+
+/*                              Estilos para el contenedor del Menú desplegable              */
+.container-menu-desplegable{
+    background-color: #154360;
+    box-shadow: 2px 0px 5px 2px #34495E;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.container-menu-desplegable ul{
+    padding: 0px 0px 20px 0px;
+    list-style: none;
+}
+
+.container-menu-desplegable ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.container-menu-desplegable ul li:hover{
+    background-color: #D0D3D4;
+    color: #BDC3C7;
+}

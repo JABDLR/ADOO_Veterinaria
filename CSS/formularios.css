@@ -1,0 +1,39 @@
+.formulario.off{
+    display: none;
+}
+
+.formulario{
+    background-color: white;
+    border: solid 5px white;
+    border-radius: 2px;
+    position: absolute;
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+}
+
+.OtraEsc.off{
+    display: none;
+}
+
+.OtraEsc{
+    display: block;
+}
+
+.verInfo.off{
+    display: none;
+}
+
+.verInfo{
+    background-color: white;
+    border: solid 5px white;
+    border-radius: 2px;
+    position: absolute;
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+}
