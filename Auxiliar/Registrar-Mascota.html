@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar-Mascota</title>
+
+    <!--Hojas de estilo-->
+    <link rel="stylesheet" href=" ../CSS/maquetado.css">
+    <link rel="stylesheet" href=" ../CSS/Botones.css">
+    <link rel="stylesheet" href=" ../CSS/formularios.css">
+
+    
+</head>
+
+<body class="grid-container">
+    <!--Heder-->
+    <header class="header">
+        <div class="Boton-desplegable" id="Boton-desplegable">
+            <img src=" ../img/menu.png" alt="Boton menu">
+        </div>
+
+        <div class="Logo">
+            <img src=" ../img/logo.png" alt="Logo Veterinaria">
+        </div>
+
+        <div class="Container-Reloj">
+            <div class="Datos-hora" id="reloj"></div>
+            <div class="Datos-fecha">
+                <span id="fec_Datos"></span>
+            </div>
+        </div>
+
+        <div class="Container-Btn-CS">
+            <button type="button" class="boton dos" onclick="location.href='/index.html'">
+                <span>cerrar sesion</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!--Menu desplegable-->
+        <div class="container-menu-desplegable active" id="menu-desplegable">
+            <ul>
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="Actividad1.html">Actividad 1</a> </li>
+                <li> <a href="Actividad2.html">Actividad 2</a> </li>
+                <li> <a href="#">Actividad 3</a> </li>
+                <li> <a href="#">Actividad 4</a> </li>
+                <li> <a href="#">Cerrar seción</a> </li>
+            </ul>
+        </div>
+
+
+                                        <!--Aqui debajo agregen su contenido-->
+        <div class="formulario">
+
+            <form method="post">
+                <fieldset>
+                    <legend> Registro de la mascota </legend>
+                    <label for="name">Nombre de la mascota:</label><br>
+                    <input type="text" id="name" class="form-control" placeholder="Nombre"><br>
+                    <label for="especie">Especie de la mascota:</label><br>
+                    <input type="text" id="especie" class="form-control" placeholder="Especie de la mascota"><br>
+                    <label for="Edad"> Edad:</label><br>
+                    <input type="text" id="Edad" class="form-control" placeholder="Edad de la mascota"><br>
+                    <label>Genero:</label><br>
+                    <input type="radio" name="genero" id="H" class="form-check-input">
+                    <label for="H">Hombre</label><br>
+                    <input type="radio" name="genero" id="M" class="form-check-input">
+                    <label for="M">Mujer</label><br><br>
+    
+                    <label for="curp">Curp del dueño:</label><br>
+                    <input type="text" id="curp" class="form-control">
+                    <label for="curp">RUAC de la Mascota:</label><br>
+                    <input type="text" id="RUAC" class="form-control">
+                    <br><br>
+
+                    <input type="hidden" id="user" class="form-control" value="<?php echo($usuario);?>">
+                </fieldset>
+    
+                <br>
+            </form>
+            
+            <div class="btn-Formularios">
+                <button onclick="validar()"  class="boton uno">
+                    <span>Enviar</span>
+                </button>
+                <button onclick="location.reload()" class="boton dos">
+                    <span>Limpiar</span>
+                </button>        
+            </div>
+
+            <br><br>
+        </div>
+    
+    
+        
+        <div class="verInfo off">
+            <div class="des">  
+            </div>
+            <br><br>
+            <div class="btn-Formularios">
+                    <button onclick="aceptarCambios()" class="boton uno">
+                        <span>Aceptar</span>
+                    </button>
+                    <button onclick="editarContenido()" class="boton dos">
+                        <span>Modificar</span>
+                    </button>
+                </div>
+        </div>
+    </main>
+
+    <!--pie de página-->
+    <footer class="footer">
+        <h5 class="Datos-contacto">Datos de contacto</h5>
+        <p class="Datos-contacto">Correo:   equipo3@escom.com</p>
+        <p class="Datos-contacto">Telefono: 07700900461</p>
+    </footer>
+
+    <script src=" ../JS/reloj.js"></script>
+    <script src=" ../JS/MenuDesplegable.js"></script>
+    <script src=" ../JS/ValidacionesRegitrarMascota.js"></script> <!--aqui esto lo nuevo-->
+</body>
+</html>

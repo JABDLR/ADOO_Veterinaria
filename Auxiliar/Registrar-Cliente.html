@@ -10,11 +10,6 @@
     <link rel="stylesheet" href=" ../CSS/maquetado.css">
     <link rel="stylesheet" href=" ../CSS/Botones.css">
     <link rel="stylesheet" href=" ../CSS/formularios.css">
-
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     
 </head>
 
@@ -62,7 +57,7 @@
             <div class="formulario">
                 <form action ="guardarDatos.php" method="post">
                     <fieldset>
-                        <legend> Registro del cliente </legend>
+                        <legend> Datos del cliente </legend>
                         <label for="name">Nombre:</label><br>
                         <input type="text" id="name" class="form-control" placeholder="Nombre"><br>
                         <label for="apellidoP">Apellido paterno:</label><br>
@@ -121,9 +116,16 @@
                     
                     <br>
                 </form>
-                
-                <button onclick="validar()"  class="btn btn-primary">Enviar</button>
-                <button onclick="location.reload()" class="btn btn-danger">Limpiar</button>        
+
+                <div class="btn-Formularios">
+                    <button onclick="validar()"  class="boton uno">
+                        <span>Enviar</span>
+                    </button>
+                    <button onclick="location.reload()" class="boton dos">
+                        <span>Limpiar</span>
+                    </button>        
+                </div>
+
                 <br><br>
             </div>
 
@@ -133,8 +135,14 @@
                 <div class="des">  
                 </div>
                 <br><br>
-                <button onclick="aceptarCambios()" class="btn btn-primary">Aceptar</button>
-                <button onclick="editarContenido()" class="btn btn-danger">Modificar</button>
+                <div class="btn-Formularios">
+                    <button onclick="aceptarCambios()" class="boton uno">
+                        <span>Aceptar</span>
+                    </button>
+                    <button onclick="editarContenido()" class="boton dos">
+                        <span>Modificar</span>
+                    </button>
+                </div>
             </div>
             
         </div>
@@ -149,6 +157,6 @@
 
     <script src=" ../JS/reloj.js"></script>
     <script src=" ../JS/MenuDesplegable.js"></script>
-    <script src="javascript/validaciones.js"></script><!--Hay que chacar este show-->
+    <script src=" ../JS/ValidacionesRegistrarCliente.js"></script><!--Hay que chacar este show-->
 </body>
 </html>
