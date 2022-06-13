@@ -3,16 +3,44 @@
 }
 
 .formulario{
-    background-color: white;
-    border: solid 5px white;
-    border-radius: 2px;
-    position: absolute;
+    background-color: rgb(221, 221, 223);
+    opacity: 0.8;
+    border: solid 2px rgb(46, 91, 99);
+    border-radius: 20px;
+    /*position: absolute;*/
     padding: 10px;
     height: auto;
-    width: 50%;
-    top: 20%;
-    left: 25%;
+    width: 60%;
+    /*top: 25%;*/
+    /*left: 25%;*/
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow:15px 15px 10px 10px rgb(95, 113, 124);
+    text-align: left;
+    z-index: -1;
+
 }
+
+.inputText{
+    width:98%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #0e374b;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    color: #0e374b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+
+}
+.inputText:focus{
+    
+    box-shadow:1px 1px 10px  rgb(131, 43, 8); ;
+    outline:none;
+}
+
 
 .OtraEsc.off{
     display: none;
@@ -36,4 +64,129 @@
     width: 50%;
     top: 20%;
     left: 25%;
+}
+/*Estilos formularios*/
+body {
+	margin: 50px;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: rgb(0, 0, 0);
+	background: #f2f2f2; 
+	font-size: 1.2em;
+	line-height: 1.5em;
+	
+	padding-top: 45px; /* Relleno superior igual a la altura de la cabecera*/
+
+}
+.subtitulo{
+    text-align: center;
+}
+.titulo_encabezado {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+#encabezado_principal {
+	background: rgb(7, 60, 105);
+	color: rgb(255, 255, 255);
+	height: 95px;
+	opacity:0.9;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 1;
+}
+#encabezado_principal a {
+	color: rgb(255, 255, 255);
+	font-size: larger;
+}
+
+
+.Titulo_principal {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+    width: 20%;
+    height:100px
+}
+
+.Titulo_principal:hover {
+	color: #0b76a6;
+}
+
+.Titulo_principal .nombre_sitio {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.Titulo_principal .descripcion_sitio {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: rgb(255, 255, 255);
+}
+.navegacion {
+	float: right;
+    padding:10px
+}
+.logo{
+    float: left;
+    height: 99%;
+    width: 15%;
+}
+.navegacion ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}
+
+.navegacion ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+
+.navegacion ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.navegacion ul li a:hover {
+	background: #0b76a6;
+}
+
+.boton_submit{
+    font-size: larger;
+    padding: 8px;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+}
+.boton_submit:hover{
+    cursor: pointer;
+    background-color: #165474;
+    color: white;
+   
+}
+.boton_limpiar{
+    font-size: larger;
+    padding: 8px;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+}
+.boton_limpiar:hover{
+    cursor: pointer;
+    background-color: #ad2f36;
+    color: white;
+   
 }
