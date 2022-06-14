@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Búsqueda de mascota</title>
+    <link rel="stylesheet" href="../CSS/formularios.css">
+    <script src="../JS/formularios.js">
+    </script>
+</head>
+
+<body>
+    <header id="encabezado_principal">
+        <div class="logo"><img src="./IMG/logo.png" alt="logo" style="height:100px"></div>
+        <a class="Titulo_principal" href="#">
+            <span class="nombre_sitio">Veterinaria</span>
+            <span class="descripcion_sitio">Buscar mascota</span>
+        </a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="./Inicio-Auxiliar.html" id="regresar">Regresar</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="principal">
+        <article>
+            <!--header>
+                <h1 class="titulo_encabezado">Nuevo registro</h1>
+            </header-->
+            <div class="contenido"
+                style="background-image: url('http://www.homelesstohousecats.com/wp-content/uploads/2014/06/Cat-with-Vet-Stethascope-1024x1024.jpg') ;  background-size:cover; ;">
+                <form action="registra.php" method="post" name="formulario_registro"><br>
+                    <table class="formulario" style="width:90%">
+                        <tr>
+                            <td colspan="7">
+                                <h2 class="subtitulo">Buscar mascota</h2>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <br />
+                                <input class="inputTextMediano" onkeyup="mayus(this)" type="text" name="nombre_mascota"
+                                    id="nombre_mascota" placeholder="Nombre de la mascota" required="" />
+                                <input class=" inputTextMediano" onkeyup="mayus(this)" type="text" name="ruac" id="ruac"
+                                    placeholder="RUAC de la mascota" required />
+                                <input class="inputTextMediano" onkeyup="mayus(this)" type="text" name="nombre_cliente"
+                                    id="nombre_cliente" placeholder="Nombre del dueño" required="" />
+                                <input class="inputTextMediano" onkeyup="mayus(this)" type="text" name="curp" id="curp"
+                                    pattern=" ([A-Z] [4))+([0-9] [6])+([H|M] (1])+([A-Z] [5])+([0-9] [2]) "
+                                    maxlength="18" placeholder="CURP del dueño" required />
+                                <input type="button" name="filtrar" id="filtrar" value="FILTRAR" class="boton_filtrar"
+                                    onclick="filtrar()">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br>
+                                Nombre de la mascota
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                RUAC
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Nombre del dueño
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Curp del dueño
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Cambiar dueño
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Editar
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Eliminar
+                                <br />
+                            </td>
+                        </tr>
+                        <!--? php
+                        Seccion de consulta
+                        ?-->
+
+                    </table>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer id="pie_pagina" style="text-align: center;">
+        <br>
+        <p>&copy; 2022 Equipo 3 Todos los derechos reservados | Contacto: <a href="">equipo3@escom.com</a>
+            &nbsp;&nbsp;&nbsp;Telefono: <a href="">07700900461 </a></p>
+    </footer>
+
+
+</body>
+
+</html>

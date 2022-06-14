@@ -40,6 +40,25 @@
     box-shadow:1px 1px 10px  rgb(131, 43, 8); ;
     outline:none;
 }
+.inputTextMediano{
+    width:30%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #0e374b;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    color: #0e374b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+
+}
+.inputTextMediano:focus{
+    
+    box-shadow:1px 1px 10px  rgb(131, 43, 8); ;
+    outline:none;
+}
 
 
 .OtraEsc.off{
@@ -170,6 +189,21 @@ body {
     border-radius: 1em;
 }
 .boton_submit:hover{
+    cursor: pointer;
+    background-color: #165474;
+    color: white;
+   
+}
+.boton_filtrar{
+    font-size: small;
+    padding: 4px;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+.boton_filtrar:hover{
     cursor: pointer;
     background-color: #165474;
     color: white;

@@ -14,7 +14,7 @@ window.onload = function () {
     $regreso.addEventListener('click', confirmaRegreso);
 
     function confirmaRegreso() {
-        if (!confirm('Está seguro?')) {
+        if (!confirm('¿Está seguro?')) {
             event.preventDefault();
         }
 
@@ -24,7 +24,7 @@ window.onload = function () {
     let $limpieza = document.getElementById('boton_limpiar');
     $limpieza.addEventListener('click', confirmaLimpieza);
     function confirmaLimpieza() {
-        if (!confirm('Está seguro?')) {
+        if (!confirm('¿Está seguro?')) {
             event.preventDefault();
         }
     }
