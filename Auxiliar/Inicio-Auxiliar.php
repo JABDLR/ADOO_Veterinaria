@@ -1,3 +1,14 @@
+<?php    
+    require("../php/consultas.php");
+
+    $usuario= $_GET["user"];
+    
+    $consulta = new Consultas();
+    $consulta -> validarUser($usuario);
+    $nombre = $consulta -> getNombre($usuario);
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +47,7 @@
         </div>
 
         <div class="Container-Btn-CS">
-            <button type="button" class="boton dos" onclick="location.href='/index.html'">
+            <button type="button" class="boton dos" onclick="location.href=' ../index.html'">
                 <span>Cerrar sesión</span>
             </button>
         </div>
@@ -46,7 +57,7 @@
     <main class="main">
         <div class="Bievenida-container">
             <h1 class="Bievenida">
-                Bienvenido Auxiliar Ulices Chaidez.
+                Bienvenido Auxiliar <?php echo $nombre?>.
             </h1>
         </div>
 
@@ -90,7 +101,7 @@
                 <li> <a href="RegistrarMascota.html">Registrar mascotas</a> </li>
                 <li> <a href="BuscarCliente.html">Buscar clientes</a> </li>
                 <li> <a href="BuscarMascota.html">Buscar mascota</a> </li>
-                <li> <a href="#">Cerrar sesión</a> </li>
+                <li> <a href=" ../index.html">Cerrar sesión</a> </li>
             </ul>
         </div>
 

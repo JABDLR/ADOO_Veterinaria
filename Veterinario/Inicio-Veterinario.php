@@ -1,3 +1,14 @@
+<?php    
+    require("../php/consultas.php");
+
+    $usuario= $_GET["user"];
+    
+    $consulta = new Consultas();
+    $consulta -> validarUser($usuario);
+    $nombre = $consulta -> getNombre($usuario);
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +47,7 @@
         </div>
 
         <div class="Container-Btn-CS">
-                <button type="button" class="boton dos" onclick="location.href='/index.html'">
+                <button type="button" class="boton dos" onclick="location.href=' ../index.html'">
                     <span>cerrar sesion</span>
                 </button>
         </div>
@@ -46,7 +57,7 @@
     <main class="main">
         <div class="Bievenida-container">
             <h1 class="Bievenida">
-                Bienvenido MVZ Ariel Camacho.
+                Bienvenido MVZ <?php echo $nombre?>.
             </h1>
         </div>
 
@@ -82,7 +93,7 @@
                 <li> <a href="RegistrarCliente.html">Dar consulta</a> </li>
                 <li> <a href="RegistrarMascota.html">Historial Clinico</a> </li>
                 <li> <a href="BuscarCliente.html">Actualizar estado de Mascota</a> </li>
-                <li> <a href="#">Cerrar seción</a> </li>
+                <li> <a href=" ../index.html">Cerrar seción</a> </li>
             </ul>
         </div>
 
