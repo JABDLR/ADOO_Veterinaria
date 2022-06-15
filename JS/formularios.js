@@ -8,6 +8,29 @@ function validarRegistro() {
     //e.preventDefault();    
 }
 
+function validarEdicion(){
+    if ((!document.querySelector('input[name="genero"]:checked')))
+        alert('Revise que todos los campos han sido completados');
+}
+function validarCambio(){
+    if(curp_actual.value=="" || curp_nuevo.value==""){
+        alert('Complete los campos');
+        event.preventDefault();
+    }
+    else if(curp_actual.value==curp_nuevo.value){
+        alert('Ha ingresado el mismo curp');
+        event.preventDefault();
+    }
+    else if(curp_actual.value.length!=18 || curp_nuevo.value.lenght!=18){
+        alert('El curp no tiene el formato correcto');
+        event.preventDefault();
+    }
+    else{
+        if (!confirm('¿Desea guardar los cambios?')){
+            event.preventDefault();
+        }
+    }
+}
 window.onload = function () {
 
     let $regreso = document.getElementById('regresar');
