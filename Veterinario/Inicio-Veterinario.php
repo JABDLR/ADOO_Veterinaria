@@ -1,4 +1,4 @@
-<!-- <?php    
+<?php    
     require("../php/consultas.php");
 
     $usuario= $_GET["user"];
@@ -7,7 +7,7 @@
     $consulta -> validarUser($usuario);
     $nombre = $consulta -> getNombre($usuario);
     
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,36 +64,22 @@
         <div class="Botones-container">
 
             <div class="Container-Actividad1">
-<<<<<<< HEAD
-                <h2 class="nombre-atividad">Dar consulta</h2>
-                <a href="darConsulta.php" class="BotonActividad">
-=======
                 <h2 class="nombre-atividad">Iniciar consulta</h2>
                 <a href="IniciarConsulta.html" class="BotonActividad">
->>>>>>> ddb72fdb59a39ea660b04f1192c8b73dad34fdb8
                     <img src=" ../img/ServicioConsulta.png" alt="Dar consulta">
                 </a>
             </div>
 
             <div class="Container-Actividad2">
-<<<<<<< HEAD
-                <h2 class="nombre-atividad">Historial Clinico</h2>
-                <a href="historialClinico.html" class="BotonActividad">
-=======
                 <h2 class="nombre-atividad">Historial Clínico</h2>
                 <a href="ConsultarHistorial.html" class="BotonActividad">
->>>>>>> ddb72fdb59a39ea660b04f1192c8b73dad34fdb8
                     <img src=" ../img/HistorialMedico.png" alt="Historial clinico">
                 </a>
             </div>
 
             <div class="Container-Actividad3">
                 <h2 class="nombre-atividad">Actualizar estado de Mascota</h2>
-<<<<<<< HEAD
-                <a href="ActualizarMascota.php" class="BotonActividad-3">
-=======
                 <a href="ActualizarEstado.html" class="BotonActividad-3">
->>>>>>> ddb72fdb59a39ea660b04f1192c8b73dad34fdb8
                     <img src=" ../img/ActualizarEstado.png" alt="Estado de mascota">
                 </a>
             </div>
