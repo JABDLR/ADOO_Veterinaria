@@ -28,11 +28,7 @@
         </a>
         <nav class="navegacion">
             <ul>
-<<<<<<< HEAD:Auxiliar/RegistrarCliente.php
                 <li><a href="./Inicio-Auxiliar.php?user=<?php echo $usuario?>" id="regresar">Regresar </a></li>
-=======
-                <li><a href="./Inicio-Auxiliar.php" id="regresar">Regresar </a></li>
->>>>>>> 9de550ab9ba9a11912ce6de9f5c1d1b51421d224:Auxiliar/RegistrarCliente.html
                 <li><a href="#">Acerca de</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
