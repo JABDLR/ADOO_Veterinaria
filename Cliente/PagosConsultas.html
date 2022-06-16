@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pago de consulta</title>
+    <link rel="stylesheet" href="../CSS/formularios.css">
+    <script src="../JS/formularios.js">
+    </script>
+</head>
+
+<body>
+    <header id="encabezado_principal">
+        <div class="logo"><img src="./../img/logo.png" alt="logo" style="height:100px"></div>
+        <a class="Titulo_principal" href="#">
+            <span class="nombre_sitio">Veterinaria</span>
+            <span class="descripcion_sitio">Pagar consulta</span>
+        </a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="./Inicio-Cliente.php" id="regresar">Regresar</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="principal">
+        <article>
+            <!--header>
+                <h1 class="titulo_encabezado">Nuevo registro</h1>
+            </header-->
+            <div class="contenido"
+                style="width: 99% ;background-image: url('http://www.homelesstohousecats.com/wp-content/uploads/2014/06/Cat-with-Vet-Stethascope-1024x1024.jpg') ;  background-size:cover; ;">
+                <form action="registra.php" method="post" name="AgendarCita"><br>
+                    <table class="formulario" style="width:90%">
+                        <tr>
+                            <td colspan="5">
+                                <h2 class="subtitulo">Pago de consultas</h2>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                Nombre de la mascota
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Fecha de consulta
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Monto
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Monto extra
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <hr>
+                            </td>
+                        </tr>
+                        <!--? php
+                        Seccion de consulta
+                        ?-->
+                        <tr>
+                            <td colspan="6" style="text-align: center;"><hr>
+                                <h3 class="subtitulo" >Método de pago</h3>
+                                Disponibles: <br>
+                                <select name="metodo_pago" id="metodo_pago" class="inputTextMediano" style="height:30px ;">
+                                    <option value="">Selecciona...</option>
+                                    <option value="1">********4332</option>
+                                </select><br>
+                                 o <a href="nuevoMetodo.html">Registra un nuevo método de pago</a><br><br>
+                                </p>
+                                <input type="submit" value="Pagar monto total" class="boton_pagar" id="pagar" name="pagar">
+                                <p style="font-size: 13px ;" >Al hacer clic en pagar usted está de acuerdo con los <a href="terminos.html">Términos y condiciones</a> y el <a href="aviso.html">Aviso de privacidad</a>
+                            </td>
+
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer id="pie_pagina" style="text-align: center;">
+        <br>
+        <p>&copy; 2022 Equipo 3 Todos los derechos reservados | Contacto: <a href="">equipo3@escom.com</a>
+            &nbsp;&nbsp;&nbsp;Telefono: <a href="">07700900461 </a></p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Consultar estado de la mascota</title>
+    <link rel="stylesheet" href="../CSS/formularios.css">
+    <script src="../JS/formularios.js">
+    </script>
+    <style>
+        .monitor{
+            width: 90%;
+            height: 700px;
+            /*border: 2px solid gray;*/
+            border-radius: 5em;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="encabezado_principal">
+        <div class="logo"><img src="./../img/logo.png" alt="logo" style="height:100px"></div>
+        <a class="Titulo_principal" href="#">
+            <span class="nombre_sitio">Veterinaria</span>
+            <span class="descripcion_sitio">Visualizar estado de mascota</span>
+        </a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="./Inicio-Cliente.php" id="regresar">Regresar</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="principal">
+        <article>
+            <!--header>
+                <h1 class="titulo_encabezado">Nuevo registro</h1>
+            </header-->
+            <div class="contenido"
+                style="width: 99% ;background-image: url('http://www.homelesstohousecats.com/wp-content/uploads/2014/06/Cat-with-Vet-Stethascope-1024x1024.jpg') ;  background-size:cover; ;">
+                <form action="registra.php" method="post" name="formulario_registro"><br>
+                    <table class="formulario" style="width:90%">
+                        <tr>
+                            <td colspan="6">
+                                <h2 class="subtitulo">Estado de la mascota</h2>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                Nombre de la mascota
+                            </td>
+                            <td>
+                                <br>
+                                Nombre del Veterinario
+                            </td>
+                            <td>
+                                <br>
+                                Fecha
+                            </td>
+                            <td>
+                                <br>
+                                Síntomas
+                            </td>
+                            <td>
+                                <br>
+                                Sígnos vitales
+                            </td>
+                            <td>
+                                <br>
+                                Receta
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <hr>                               
+                            </td>
+                        </tr>
+                        <!--? php
+                        Seccion de consulta
+                        ?-->
+                        <tr>
+                            <td colspan="6" style="text-align:center ;">
+                                <hr>
+                                ¿Tu mascota está internada? 
+                                <a href="https://webcamsdemexico.com/webcam/mexico-revolucion/" target="iframe_a">Puedes monitorearla en vivo</a>
+                            </td>
+                        </tr>
+                        
+                    </table>
+
+                </form>
+            </div>
+            <br>
+            <div class="monitor">
+                <iframe id="iframe_a" name="iframe_a" src="" frameborder="0" width="90%"height="90%"></iframe>
+            </div>
+        </article>
+    </section>
+    <footer id="pie_pagina" style="text-align: center;">
+        <br>
+        <p>&copy; 2022 Equipo 3 Todos los derechos reservados | Contacto: <a href="">equipo3@escom.com</a>
+            &nbsp;&nbsp;&nbsp;Telefono: <a href="">07700900461 </a></p>
+    </footer>
+
+
+</body>
+
+</html>

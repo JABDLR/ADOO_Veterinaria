@@ -48,7 +48,7 @@
 
         <div class="Container-Btn-CS">
                 <button type="button" class="boton dos" onclick="location.href=' ../index.html'">
-                    <span>cerrar sesion</span>
+                    <span>Cerrar sesión</span>
                 </button>
         </div>
     </header>
@@ -64,22 +64,36 @@
         <div class="Botones-container">
 
             <div class="Container-Actividad1">
+<<<<<<< HEAD
                 <h2 class="nombre-atividad">Dar consulta</h2>
                 <a href="darConsulta.php" class="BotonActividad">
+=======
+                <h2 class="nombre-atividad">Iniciar consulta</h2>
+                <a href="IniciarConsulta.html" class="BotonActividad">
+>>>>>>> ddb72fdb59a39ea660b04f1192c8b73dad34fdb8
                     <img src=" ../img/ServicioConsulta.png" alt="Dar consulta">
                 </a>
             </div>
 
             <div class="Container-Actividad2">
+<<<<<<< HEAD
                 <h2 class="nombre-atividad">Historial Clinico</h2>
                 <a href="historialClinico.html" class="BotonActividad">
+=======
+                <h2 class="nombre-atividad">Historial Clínico</h2>
+                <a href="ConsultarHistorial.html" class="BotonActividad">
+>>>>>>> ddb72fdb59a39ea660b04f1192c8b73dad34fdb8
                     <img src=" ../img/HistorialMedico.png" alt="Historial clinico">
                 </a>
             </div>
 
             <div class="Container-Actividad3">
                 <h2 class="nombre-atividad">Actualizar estado de Mascota</h2>
+<<<<<<< HEAD
                 <a href="ActualizarMascota.php" class="BotonActividad-3">
+=======
+                <a href="ActualizarEstado.html" class="BotonActividad-3">
+>>>>>>> ddb72fdb59a39ea660b04f1192c8b73dad34fdb8
                     <img src=" ../img/ActualizarEstado.png" alt="Estado de mascota">
                 </a>
             </div>
@@ -90,10 +104,10 @@
         <div class="container-menu-desplegable active" id="menu-desplegable">
             <ul>
                 <li> <a href="#">Inicio</a> </li>
-                <li> <a href="RegistrarCliente.html">Dar consulta</a> </li>
-                <li> <a href="RegistrarMascota.html">Historial Clinico</a> </li>
+                <li> <a href="RegistrarCliente.html">Iniciar consulta</a> </li>
+                <li> <a href="RegistrarMascota.html">Historial Clínico</a> </li>
                 <li> <a href="BuscarCliente.html">Actualizar estado de Mascota</a> </li>
-                <li> <a href=" ../index.html">Cerrar seción</a> </li>
+                <li> <a href=" ../index.html">Cerrar sesión</a> </li>
             </ul>
         </div>
 
