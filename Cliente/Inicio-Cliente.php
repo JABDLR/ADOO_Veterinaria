@@ -48,7 +48,7 @@
 
         <div class="Container-Btn-CS">
             <button type="button" class="boton dos" onclick="location.href=' ../index.html'">
-                <span>cerrar sesion</span>
+                <span>Cerrar sesión</span>
             </button>
         </div>
     </header>
@@ -65,21 +65,21 @@
 
             <div class="Container-Actividad1">
                 <h2 class="nombre-atividad">Agendar Cita</h2>
-                <a href="RegistrarCliente.html" class="BotonActividad">
+                <a href="AgendarCita.html" class="BotonActividad">
                     <img src=" ../img/AgendarCita.png" alt="Agendar cita">
                 </a>
             </div>
 
             <div class="Container-Actividad2">
                 <h2 class="nombre-atividad">Historial de consultas</h2>
-                <a href="RegistrarMascota.html" class="BotonActividad">
+                <a href="HistorialConsultas.html" class="BotonActividad">
                     <img src=" ../img/HistorialMedico.png" alt="Historial de consultas">
                 </a>
             </div>
 
             <div class="Container-Actividad3">
                 <h2 class="nombre-atividad">Pagar Consulta</h2>
-                <a href="BuscarCliente.html" class="BotonActividad">
+                <a href="PagosConsulta.html" class="BotonActividad">
                     <img src=" ../img/PagarConsulta.png" alt="Pagar consulta">
                 </a>
             </div>

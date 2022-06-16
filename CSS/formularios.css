@@ -242,3 +242,33 @@ body {
     color: white;
    
 }
+
+.boton_cambiar_metodo{
+    font-size: larger;
+    padding: 4px;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+.boton_cambiar_metodo:hover{
+    cursor: pointer;
+    background-color: #ad422f;
+    color: white;
+}
+
+.boton_pagar{
+    font-size: larger;
+    padding: 4px;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+.boton_pagar:hover{
+    cursor: pointer;
+    background-color: #2f4cad;
+    color: white;
+}

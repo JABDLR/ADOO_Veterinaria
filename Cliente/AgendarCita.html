@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Agendar cita</title>
+    <link rel="stylesheet" href="../CSS/formularios.css">
+    <script src="../JS/formularios.js">
+    </script>
+</head>
+
+<body>
+    <header id="encabezado_principal">
+        <div class="logo"><img src="./../img/logo.png" alt="logo" style="height:100px"></div>
+        <a class="Titulo_principal" href="#">
+            <span class="nombre_sitio">Veterinaria</span>
+            <span class="descripcion_sitio">Agendar cita</span>
+        </a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="./Inicio-Auxiliar.php" id="regresar">Regresar</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="principal">
+        <article>
+            <!--header>
+                <h1 class="titulo_encabezado">Nuevo registro</h1>
+            </header-->
+            <div class="contenido"
+                style="width: 99% ;background-image: url('http://www.homelesstohousecats.com/wp-content/uploads/2014/06/Cat-with-Vet-Stethascope-1024x1024.jpg') ;  background-size:cover; ;">
+                <form action="registra.php" method="post" name="AgendarCita"><br>
+                    <table class="formulario" style="width:90%">
+                        <tr>
+                            <td colspan="4">
+                                <h2 class="subtitulo">Agendar nueva cita para la mascota</h2>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Nombre de la mascota:
+                            <select name="nombre_mascota" id="nombre_mascota">
+                                <option value="">Seleccione...</option>
+                                <!--Seccion consulta-->
+                              </select>
+                          </td>
+                          <td colspan="2">
+                            Seleccione una fecha para la cita
+                            <input type="datetime-local" name="fecha_cita" id="fecha_cita" required>                          
+                            <input type="submit" id="agendar" value="Agendar cita" onblur="validarCita()" style="margin-left:20px ;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <br>
+                                <h3 class="subtitulo">Próximas citas</h3>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                Nombre de la mascota
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Nombre del dueño
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Fecha
+                                <br />
+                            </td>
+                            <td>
+                                <br>
+                                Hora
+                                <br />
+                            </td>
+                        </tr>
+                        <!--? php
+                        Seccion de consulta
+                        ?-->
+                        
+                    </table>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer id="pie_pagina" style="text-align: center;">
+        <br>
+        <p>&copy; 2022 Equipo 3 Todos los derechos reservados | Contacto: <a href="">equipo3@escom.com</a>
+            &nbsp;&nbsp;&nbsp;Telefono: <a href="">07700900461 </a></p>
+    </footer>
+
+
+</body>
+
+</html>
