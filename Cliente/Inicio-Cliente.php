@@ -79,14 +79,14 @@
 
             <div class="Container-Actividad3">
                 <h2 class="nombre-atividad">Pagar Consulta</h2>
-                <a href="PagosConsulta.html" class="BotonActividad">
+                <a href="PagosConsultas.html" class="BotonActividad">
                     <img src=" ../img/PagarConsulta.png" alt="Pagar consulta">
                 </a>
             </div>
 
             <div class="Container-Actividad4">
                 <h2 class="nombre-atividad">Estado de Mascota Ingresada</h2>
-                <a href="BuscarMascota.html" class="BotonActividad">
+                <a href="ConsultarEstado.html" class="BotonActividad">
                     <img src=" ../img/ActualizarEstado.png" alt="Estado de Mascota">
                 </a>
             </div>
