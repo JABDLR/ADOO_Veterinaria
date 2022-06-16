@@ -1,4 +1,4 @@
-<?php    
+<!-- <?php    
     require("../php/consultas.php");
 
     $usuario= $_GET["user"];
@@ -7,7 +7,7 @@
     $consulta -> validarUser($usuario);
     $nombre = $consulta -> getNombre($usuario);
     
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,21 +65,21 @@
 
             <div class="Container-Actividad1">
                 <h2 class="nombre-atividad">Dar consulta</h2>
-                <a href="RegistrarCliente.html" class="BotonActividad">
+                <a href="darConsulta.php" class="BotonActividad">
                     <img src=" ../img/ServicioConsulta.png" alt="Dar consulta">
                 </a>
             </div>
 
             <div class="Container-Actividad2">
                 <h2 class="nombre-atividad">Historial Clinico</h2>
-                <a href="RegistrarMascota.html" class="BotonActividad">
+                <a href="historialClinico.html" class="BotonActividad">
                     <img src=" ../img/HistorialMedico.png" alt="Historial clinico">
                 </a>
             </div>
 
             <div class="Container-Actividad3">
                 <h2 class="nombre-atividad">Actualizar estado de Mascota</h2>
-                <a href="BuscarCliente.html" class="BotonActividad-3">
+                <a href="ActualizarMascota.php" class="BotonActividad-3">
                     <img src=" ../img/ActualizarEstado.png" alt="Estado de mascota">
                 </a>
             </div>
