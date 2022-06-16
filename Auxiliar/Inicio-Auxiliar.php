@@ -65,7 +65,7 @@
 
             <div class="Container-Actividad1">
                 <h2 class="nombre-atividad">Registrar cliente</h2>
-                <a href="RegistrarCliente.html" class="BotonActividad">
+                <a href="RegistrarCliente.php?user=<?php echo $usuario?>" class="BotonActividad">
                     <img src=" ../img/RegistrarCliente.png" alt="Registrar cliente">
                 </a>
             </div>
@@ -97,7 +97,7 @@
         <div class="container-menu-desplegable active" id="menu-desplegable">
             <ul>
                 <li> <a href="#">Inicio</a> </li>
-                <li> <a href="RegistrarCliente.html">Registrar cliente</a> </li>
+                <li> <a href="RegistrarCliente.php?user=<?php echo $usuario?>">Registrar cliente</a> </li>
                 <li> <a href="RegistrarMascota.html">Registrar mascotas</a> </li>
                 <li> <a href="BuscarCliente.html">Buscar clientes</a> </li>
                 <li> <a href="BuscarMascota.html">Buscar mascota</a> </li>

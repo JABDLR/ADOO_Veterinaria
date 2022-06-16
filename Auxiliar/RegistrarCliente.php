@@ -1,13 +1,24 @@
+<?php    
+    require("../php/consultas.php");
+
+    $usuario= $_GET["user"];
+    
+    $consulta = new Consultas();
+    $consulta -> validarUser($usuario);
+    $nombre = $consulta -> getNombre($usuario);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="utf-8">
     <title>Registro del cliente</title>
-    <link rel="stylesheet" href="../CSS/formularios.css">
-    <script src="../JS/formularios.js">    
-    </script>
+
+    <link rel="stylesheet" href=" ../CSS/formularios.css">
+    <link rel="stylesheet" href=" ../CSS/Botones.css">
 </head>
+
 <body>
     <header id="encabezado_principal">
         <div class="logo"><img src="./IMG/logo.png" alt="logo" style="height:100px"></div>
@@ -17,7 +28,7 @@
         </a>
         <nav class="navegacion">
             <ul>
-                <li><a href="./Inicio-Auxiliar.html" id="regresar">Regresar </a></li>
+                <li><a href="./Inicio-Auxiliar.php?user=<?php echo $usuario?>" id="regresar">Regresar </a></li>
                 <li><a href="#">Acerca de</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -28,8 +39,9 @@
             <!--header>
                 <h1 class="titulo_encabezado">Nuevo registro</h1>
             </header-->
+            
             <div class="contenido" style="background-image: url('http://www.homelesstohousecats.com/wp-content/uploads/2014/06/Cat-with-Vet-Stethascope-1024x1024.jpg') ;  background-size:contain; ;">
-                <form action="registra.php" method="post" name="formulario_registro"><br>
+                <form method="post" name="formulario_registro"><br>
                     <table class="formulario">
                         <tr>
                             <td><h2 class="subtitulo">Datos personales</h2><hr>
@@ -142,18 +154,31 @@
                                 <br>
                                 Correo electrónico: <br>
                                 <input type="text" name="correo" id="correo" class="inputText" required><br>
-                            </td>
+                            </td>                            
                         </tr>
+
+                        <tr>
+                            <td>
+                            <input type="hidden" id="user" class="form-control" value="<?php echo($usuario);?>">
+                            </td>                            
+                        </tr>
+                        
                         <tr>
                             <td style="text-align: center;">
-                                <br>
-                            <input type="submit" name="registrar" id="registrar" onblur="validarRegistro()" value="Registrar" class="boton_submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="reset" value="Reiniciar" class="boton_limpiar" id="boton_limpiar">
+                            <div class="btn-Formularios">
+                            <button onclick="validar()"  class="boton uno">
+                                <span>Enviar</span>
+                            </button>
+                            <button onclick="location.reload()" class="boton dos">
+                                <span>Limpiar</span>
+                            </button>        
+                        </div>
                             </td>
                         </tr>
                     </table>
                 </form>
             </div>
+
         </article>
     </section>
     <footer id="pie_pagina" style="text-align: center;">
@@ -162,7 +187,8 @@
             &nbsp;&nbsp;&nbsp;Telefono: <a href="">07700900461 </a></p>
     </footer>
 
-
+    <script src="../JS/Validar-Cliente.js"></script>
+    <script src="../JS/formularios.js"></script>
 </body>
 
 </html>
