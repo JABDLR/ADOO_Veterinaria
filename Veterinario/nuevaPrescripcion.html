@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prescribir medicamento</title>
+
+    <link rel="stylesheet" href=" ../CSS/formularios.css">
+    <link rel="stylesheet" href=" ../CSS/Botones.css">
+</head>
+
+<body>
+    <header id="encabezado_principal">
+        <div class="logo"><img src="./../img/logo.png" alt="logo" style="height:100px"></div>
+        <a class="Titulo_principal" href="#">
+            <span class="nombre_sitio">Veterinaria</span>
+            <span class="descripcion_sitio">Nueva prescripción</span>
+        </a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="./Inicio-Veterinario.php?user=<?php echo $usuario?>" id="regresar">Regresar </a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="principal">
+        <article>
+            <!--header>
+                <h1 class="titulo_encabezado">Nuevo registro</h1>
+            </header-->
+
+            <div class="contenido"
+                style="background-image: url('https://vidaconmascotas.com/wp-content/uploads/2021/01/1610487306_Medicamentos-humanos-que-se-pueden-administrar-al-perro-el-consejo-1024x683.jpg') ;  background-size:contain; ;">
+                <form method="post" name="formulario_registro"><br>
+                    <table class="formulario">
+                        <tr>
+                            <td>
+                                <h2 class="subtitulo">Nueva prescripción de medicamento</h2>
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nombre del medicamento
+                                <br />
+                                <input class="inputText" onkeyup="mayus(this)" type="text" name="nombre_medicamento"
+                                    id="nombre_medicamento" placeholder="Nombre del medicamento" required="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                Denominación / Nombre comercial <br />
+                                <input class="inputText" onkeyup="mayus(this)" type="text" name="denominacion"
+                                    id="denominacion" placeholder="Denominación / Nombre comercial" required="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br>
+                                Presentación:
+                                <select name="presentacion" id="presentacion" required class="inputTextMediano" style="height: 30px;">
+                                    <option value="">Elija una...</option>
+                                    <option value="comprimidos">Comprimidos</option>
+                                    <option value="grageas">Grágeas</option>
+                                    <option value="capsulas">Cápsulas</option>
+                                    <option value="sobres">Sobres</option>
+                                    <option value="jarabe">Jarabe</option>
+                                    <option value="ampolleta">Ampolletas</option>
+                                    <option value="suspension">Suspensión</option>
+                                    <option value="emulsion">Emulsión</option>
+                                    <option value="inyeccion">Inyección</option>
+                                </select> &nbsp;&nbsp;&nbsp;&nbsp;
+                                Cantidad: <select name="cantidad" id="cantidad" required class="inputTextMediano" style=" height: 30px;">
+                                    <option value="">0 envase</option>
+                                    <option value="1">1 envase</option>
+                                    <option value="2">2 envases</option>
+                                    <option value="3">3 envases</option>
+                                    <option value="4">4 envases</option>
+                                    <option value="5">5 envases</option>
+                                    <option value="6">6 envases</option>
+                                    <option value="7">7 envases</option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                Dosis (individual):
+                                <input class="inputTextMediano" type="number" name="dosis_individual" id="dosis_individual" required style="width:40px ;"/> &nbsp;&nbsp;&nbsp;
+                                Duración del tratamiento:
+                                <input class="inputTextMediano" type="number" name="duracion_tratamiento" id="duracion_tratamiento" required style="width:40px ;"/> días <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                Tiempo entre dosis:
+                                <input class="inputTextMediano" type="number" name="dosis_individual" id="dosis_individual" required style="width:40px ;"/> horas
+                                
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td style="text-align: center;">
+                                <div class="btn-Formularios">
+                                    <br>
+                                    <button onclick="validar()" class="boton uno">
+                                        <span>Enviar</span>
+                                    </button>
+                                    <button onclick="location.reload()" class="boton dos">
+                                        <span>Limpiar</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer id="pie_pagina" style="text-align: center;">
+        <br>
+        <p>&copy; 2022 Equipo 3 Todos los derechos reservados | Contacto: <a href="">equipo3@escom.com</a>
+            &nbsp;&nbsp;&nbsp;Telefono: <a href="">07700900461 </a></p>
+    </footer>
+
+    <script src="../JS/Validar-Cliente.js"></script>
+    <script src="../JS/formularios.js"></script>
+</body>
+
+</html>
