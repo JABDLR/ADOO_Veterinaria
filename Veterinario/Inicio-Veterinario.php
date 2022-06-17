@@ -64,14 +64,14 @@
         <div class="Botones-container">
 
             <div class="Container-Actividad1">
-                <h2 class="nombre-atividad">Iniciar consulta</h2>
-                <a href="darConsulta.php" class="BotonActividad">
+                <h2 class="nombre-atividad">Dar consulta</h2>
+                <a href="iniciarConsulta.php" class="BotonActividad">
                     <img src=" ../img/ServicioConsulta.png" alt="Dar consulta">
                 </a>
             </div>
 
             <div class="Container-Actividad2">
-                <h2 class="nombre-atividad">Historial Clínico</h2>
+                <h2 class="nombre-atividad">Historial Clinico</h2>
                 <a href="historialClinico.html" class="BotonActividad">
                     <img src=" ../img/HistorialMedico.png" alt="Historial clinico">
                 </a>
@@ -79,7 +79,7 @@
 
             <div class="Container-Actividad3">
                 <h2 class="nombre-atividad">Actualizar estado de Mascota</h2>
-                <a href="" class="BotonActividad-3">
+                <a href="ActualizarMascota.php" class="BotonActividad-3">
                     <img src=" ../img/ActualizarEstado.png" alt="Estado de mascota">
                 </a>
             </div>
